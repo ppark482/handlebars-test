@@ -24,29 +24,29 @@
   <body>
 
     <div class="hero-unit">
-      <h1>Books</h1>
-      <ul id="books"></ul>
+      <h1>Very Useful Data</h1>
+      <ul class="books"></ul>
 
-      <!-- <ul class="peopleInClass">
-
-      </ul> -->
+      <ul class="peopleInClass"></ul>
     </div>
 
     <script type="text/x-handlebars-template" id="book">
+      {{#each books }}
         <li> {{ book }} by {{ author }} </li>
+      {{/each}}
     </script>
-<!--
+
     <script type="text/x-handlebars-template" id="peopleList">
       {{#each people }}
-      <li>{{ people.firstName }}{{ people.lastName }} + 'sits at the ' + {{ people.table }} + '.'</li>
+      <li>{{ firstName }} {{ lastName }} sits at the {{ table }} table.</li>
       {{/each}}
-    </script> -->
+    </script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
-    <script src="../bower_components/handlebars/handlebars.runtime.min.js"></script>
+    <script src="../bower_components/handlebars/handlebars.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
