@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>handlebars project</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div class="hero-unit">
+      <h1>Very Useful Data</h1>
+      <ul class="books"></ul>
+
+      <ul class="peopleInClass"></ul>
+      <h2>The One and Only:</h2>
+      <ul class="gulper"></ul>
+    </div>
+
+    <script type="text/x-handlebars-template" id="book">
+      {{#each books }}
+        <li> {{ book }} by {{ author }} </li>
+      {{/each}}
+    </script>
+
+    <script type="text/x-handlebars-template" id="peopleList">
+      {{#each people }}
+      <li>{{ firstName }} {{ lastName }} sits at the {{ table }} table.</li>
+      {{/each}}
+    </script>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
