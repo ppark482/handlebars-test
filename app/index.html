@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>countries project</title>
+    <title>handlebars project</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -24,16 +24,23 @@
   <body>
 
     <div class="hero-unit">
-      <ul class="peopleInClass">
+      <h1>Books</h1>
+      <ul id="books"></ul>
 
-      </ul>
+      <!-- <ul class="peopleInClass">
+
+      </ul> -->
     </div>
 
+    <script type="text/x-handlebars-template" id="book">
+        <li> {{ book }} by {{ author }} </li>
+    </script>
+<!--
     <script type="text/x-handlebars-template" id="peopleList">
       {{#each people }}
       <li>{{ people.firstName }}{{ people.lastName }} + 'sits at the ' + {{ people.table }} + '.'</li>
       {{/each}}
-    </script>
+    </script> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
