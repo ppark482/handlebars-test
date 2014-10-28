@@ -31,8 +31,12 @@ var peopleData = {
   ]
 };
 // Grab the template
-var source = $('#peopleList').html();
+var peoples = $('#peopleList').html();
 // Compile the Template (creates the function)
-var render = Handlebars.compile(source);
+var render = Handlebars.compile(peoples);
 // Send that data in
 $('.peopleInClass').html( render(peopleData));
+
+// Grab the template
+var listOut = Handlebars.template['people'];
+$('.listOfPeople').html( listOut(peopleData));
