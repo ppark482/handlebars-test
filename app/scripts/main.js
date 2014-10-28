@@ -55,5 +55,5 @@ var gulpMaster = {
   ]
 }
 // Grab the template
-var whatup = Handlebars.template['people'];
+var whatup = Handlebars.templates['people'];
 $('.gulper').html( whatup(gulpMaster));
